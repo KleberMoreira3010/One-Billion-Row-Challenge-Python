@@ -7,7 +7,7 @@ def create_duckdb():
             MIN(temperature) AS min_temperature,
             CAST(AVG(temperature) AS DECIMAL(3,1)) AS mean_temperature,
             MAX(temperature) AS max_temperature
-        FROM read_csv("data/measurements.txt", AUTO_DETECT=FALSE, sep=';', columns={'station':VARCHAR, 'temperature': 'DECIMAL(3,1)'})
+        FROM read_csv("One-Billion-Row-Challenge-Python\data\weather_stations.csv", AUTO_DETECT=FALSE, sep=';', columns={'station':VARCHAR, 'temperature': 'DECIMAL(3,1)'})
         GROUP BY station
         ORDER BY station
     """).show()

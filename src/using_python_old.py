@@ -67,6 +67,6 @@ if __name__ == "__main__":
 
     # 1M 0.38 segundos
     # 10M 3.96 segundos.
-    path_do_txt: Path = Path("data/measurements.txt")
+    path_do_txt: Path = Path("One-Billion-Row-Challenge-Python\data\weather_stations.csv")
     # 100M > 5 minutos.
     resultados = processar_temperaturas(path_do_txt)

@@ -63,4 +63,4 @@ def organizar(diretorio):
         print("Moveu" ,velho, "-->", novo)
 
 if __name__ =='__main__':
-    organizar('C:\\users\\Kleber\\Downloads')
+    organizar('C:\\users\\Kleber\\Downloads') 
